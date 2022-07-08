@@ -1,0 +1,68 @@
+* {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-img {
+  pointer-events: none;
+}
+
+select,
+textarea {
+  width: 100%;
+  display: block;
+  margin: 4px 0;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #f7f7f7;
+  outline: 0;
+}
+
+.App-main {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.section-1 {
+  display: flex;
+  align-self: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 40%;
+  min-height: 90vh;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@media screen and (max-width: 1000px) {
+  .App-main {
+    flex-direction: column;
+  }
+
+  .section-1 {
+    min-height: 10vh;
+  }
+}
