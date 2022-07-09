@@ -20,7 +20,7 @@ body {
   pointer-events: none;
 }
 
-select,
+input,
 textarea {
   width: 100%;
   display: block;

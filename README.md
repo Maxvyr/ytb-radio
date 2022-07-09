@@ -5,14 +5,14 @@
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A72UVP8)
 
-### design
+### design inspiration
 
 ![design-app](https://cdn.dribbble.com/userupload/2811975/file/original-229d3f914847c4d10151d51632bfcb1b.png?compress=1&resize=1024x768&vertical=center)
 
 
 ## API
 
-- [youtube api](https://developers.google.com/youtube/v3/docs/?apix=true)
+- [rapid-api](https://rapidapi.com/h0p3rwe/api/youtube-search-and-download/)
 
 ## Author
 

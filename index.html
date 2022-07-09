@@ -10,12 +10,8 @@
     <div class="App">
       <main class="App-main">
         <section class="section-1">
-          <select name="radio-channel" id="radio-channel">
-            <option value="">Select A Radio</option>
-            <option value="UCSJ4gkVC6NrvII8umztf0Owl">lofi girl</option>
-            <option value="UCPPGd9KtOnMKRoIQOHWAbow">manga lofi</option>
-            <option value="UCBUYQs0qyIqNX0PvtTOQORQ">indonesian song</option>
-          </select>
+          <input type="text" placeholder="channelID" id="input-text" />
+          <button id="button-recover">Recover</button>
           <h1 class="title">
             <a
               class="App-link"
@@ -26,10 +22,12 @@
               Radio title
             </a>
           </h1>
+          <h3 id="author">Author</h3>
+          <img id="thumbnail" src="/assets/empty-thumbnail.png" alt="" />
         </section>
 
         <section class="section-2">
-          <img src="/assets/taiwan-girl.jpeg" alt="radio-ytb" class="App-img" />
+          <video controls src="" width="450" id="video-link-dwld"></video>
         </section>
       </main>
       <footer></footer>

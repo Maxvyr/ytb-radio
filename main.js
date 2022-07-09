@@ -1,29 +1,43 @@
 import "./style.css";
-const radioDropDown = document.querySelector("#radio-channel");
-const linkTitle = document.querySelector(".App-link");
+const buttonRecover = document.querySelector("#button-recover");
+const inputText = document.querySelector("#input-text");
+const linkYtb = document.querySelector(".App-link");
+const author = document.querySelector("#author");
+const thumbnail = document.querySelector("#thumbnail");
+const video = document.querySelector("#video-link-dwld");
 
-const fetchVideo = (channelId) => {
-  const channelSimple = "UC7vHsuT_t0nj6amY9FoHsZA";
-  if (channelId === undefined) channelId = channelSimple;
-  const link = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelId}&type=video&videoDefinition=any&videoDimension=2d&videoDuration=long&key=${
-    import.meta.env.VITE_YTB_API_KEY
-  }`;
-  const listVideo = [];
-  fetch(link)
+const fetchVideo = (videoId) => {
+  let id = videoId;
+  const options = {
+    method: "GET",
+    headers: {
+      "X-RapidAPI-Key": import.meta.env.VITE_API_KEY,
+      "X-RapidAPI-Host": import.meta.env.VITE_API_HOST,
+    },
+  };
+  const linkVideo = `https://youtube-search-and-download.p.rapidapi.com/video?id=${id}`;
+
+  const linkDwldVideo = [];
+  fetch(linkVideo, options)
     .then((response) => response.json())
-    .then((data) => listVideo.push(...data.items))
+    .then((response) => {
+      console.log(response);
+      linkDwldVideo.push(...response.streamingData.formats);
+      video.src = linkDwldVideo[2].url;
+      updateLink(response);
+    })
     .catch((err) => console.error(err));
-
-  console.log(listVideo);
 };
 
-const updateLink = () => {
-  // linkTitle.innerHTML = radioDropDown.value;
-  linkTitle.href = `https://youtube.com/`;
+const updateLink = (response) => {
+  const videoDetails = response.videoDetails;
+  const listThumbnail = videoDetails.thumbnail.thumbnails;
+  linkYtb.href = `https://www.youtube.com/watch?v=${response.videoDetails.videoId}`;
+  linkYtb.innerHTML = `${videoDetails.title}`;
+  author.innerHTML = `${videoDetails.author}`;
+  thumbnail.src = `${listThumbnail[listThumbnail.length - 1].url}`;
 };
 
-radioDropDown.addEventListener("change", () => {
-  console.log(radioDropDown.value);
-  // fetchVideo(radioDropDown.value);
-  updateLink();
+buttonRecover.addEventListener("click", () => {
+  fetchVideo(inputText.value);
 });
