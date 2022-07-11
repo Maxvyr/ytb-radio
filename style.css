@@ -61,6 +61,16 @@ input {
   justify-content: space-evenly;
 }
 
+.data-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#author {
+  margin: 5px 0;
+}
+
 .App-link {
   color: #61dafb;
 }
