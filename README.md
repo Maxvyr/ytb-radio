@@ -5,9 +5,11 @@
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A72UVP8)
 
+A simple youtube downloader, work only on desktop, need some update for mobile version. You just need to paste the youtube video link and this web app do the work ;), Have fun :)
+
 ### design inspiration
 
-![design-app](https://cdn.dribbble.com/userupload/2811975/file/original-229d3f914847c4d10151d51632bfcb1b.png?compress=1&resize=1024x768&vertical=center)
+![1](https://cdn.dribbble.com/users/1696728/screenshots/18410481/media/9ae4d3dc1dc994b3461f1da986a933ba.jpg?compress=1&resize=1000x750&vertical=top)
 
 
 ## API
