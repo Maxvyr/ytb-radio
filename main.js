@@ -39,5 +39,12 @@ const updateLink = (response) => {
 };
 
 buttonRecover.addEventListener("click", () => {
-  fetchVideo(inputText.value);
+  const linkBase = "https://www.youtube.com/watch?v=";
+  if (inputText.value.includes(linkBase)) {
+    let videoId = inputText.value.replace(linkBase, "");
+    console.log(videoId);
+    fetchVideo(videoId);
+  } else {
+    alert("Your link is not a youtube link valid");
+  }
 });
