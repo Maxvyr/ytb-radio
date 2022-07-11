@@ -10,24 +10,31 @@
     <div class="App">
       <main class="App-main">
         <section class="section-1">
-          <input type="text" placeholder="channelID" id="input-text" />
-          <button id="button-recover">Recover</button>
-          <h1 class="title">
+          <div class="formulaire">
+            <input
+              type="text"
+              placeholder="https://www.youtube.com/watch?v=uKDTTInThu8"
+              id="input-text"
+            />
+            <button class="button-find">Find</button>
+          </div>
+
+          <!-- <img id="thumbnail" src="/assets/empty-thumbnail.png" alt="" /> -->
+          <h3 class="title">
             <a
               class="App-link"
               href="https://youtube.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Radio title
+              Video title
             </a>
-          </h1>
-          <h3 id="author">Author</h3>
-          <img id="thumbnail" src="/assets/empty-thumbnail.png" alt="" />
+          </h3>
+          <h4 id="author">Author</h4>
         </section>
 
         <section class="section-2">
-          <video controls src="" width="450" id="video-link-dwld"></video>
+          <video controls src="" width="650px" id="video-link-dwld"></video>
         </section>
       </main>
       <footer></footer>

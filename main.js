@@ -1,5 +1,5 @@
 import "./style.css";
-const buttonRecover = document.querySelector("#button-recover");
+const buttonRecover = document.querySelector(".button-find");
 const inputText = document.querySelector("#input-text");
 const linkYtb = document.querySelector(".App-link");
 const author = document.querySelector("#author");
