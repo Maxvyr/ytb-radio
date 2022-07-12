@@ -1,9 +1,8 @@
 import "./style.css";
 const buttonRecover = document.querySelector(".button-find");
-const inputText = document.querySelector("#input-text");
+const inputText = document.querySelector(".input-text");
 const linkYtb = document.querySelector(".App-link");
 const author = document.querySelector("#author");
-const thumbnail = document.querySelector("#thumbnail");
 const video = document.querySelector("#video-link-dwld");
 
 const fetchVideo = (videoId) => {
@@ -31,14 +30,12 @@ const fetchVideo = (videoId) => {
 
 const updateLink = (response) => {
   const videoDetails = response.videoDetails;
-  const listThumbnail = videoDetails.thumbnail.thumbnails;
   linkYtb.href = `https://www.youtube.com/watch?v=${response.videoDetails.videoId}`;
   linkYtb.innerHTML = `${videoDetails.title}`;
   author.innerHTML = `${videoDetails.author}`;
-  thumbnail.src = `${listThumbnail[listThumbnail.length - 1].url}`;
 };
 
-buttonRecover.addEventListener("click", () => {
+const onClickUpdate = () => {
   const linkBase = "https://www.youtube.com/watch?v=";
   if (inputText.value.includes(linkBase)) {
     let videoId = inputText.value.replace(linkBase, "");
@@ -47,4 +44,6 @@ buttonRecover.addEventListener("click", () => {
   } else {
     alert("Your link is not a youtube link valid");
   }
-});
+};
+
+buttonRecover.addEventListener("click", onClickUpdate);
