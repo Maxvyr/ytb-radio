@@ -78,6 +78,7 @@ input {
 video {
   border-radius: 15px;
   width: 650px;
+  box-shadow: #ffffff1c 5px 6px 16px 0px;
 }
 
 @media screen and (max-width: 1000px) {
