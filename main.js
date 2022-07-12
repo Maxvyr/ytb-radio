@@ -1,6 +1,6 @@
 import "./style.css";
 const buttonRecover = document.querySelector(".button-find");
-const inputText = document.querySelector("#input-text");
+const inputText = document.querySelector(".input-text");
 const linkYtb = document.querySelector(".App-link");
 const author = document.querySelector("#author");
 const video = document.querySelector("#video-link-dwld");

@@ -17,13 +17,21 @@ body {
   text-align: center;
 }
 
+.icon {
+  padding-left: 25px;
+  background: url("https://static.thenounproject.com/png/101791-200.png")
+    no-repeat scroll 7px 7px #f7f7f7;
+  background-size: 30px;
+}
+
 input {
   margin: 4px 0;
   padding: 10px;
-  border: 0;
-  border-radius: 5px;
+  border: 1px;
+  border-color: #2c3e50;
+  border-radius: 25px;
   font-size: 1rem;
-  background: #f7f7f7;
+  color: #2c3e50;
   outline: 0;
   width: 70%;
 }
@@ -36,12 +44,15 @@ input {
   width: 20%;
   color: #2c3e50;
   box-shadow: #ffffff1c 5px 6px 16px 0px;
+  transition: 0.4s;
 }
 
 .button-find:hover {
   color: white;
   background-color: #2e5174;
   box-shadow: #ffffff1c 5px 6px 16px 0px;
+  transform: scale(1.05);
+  transition: 0.4s;
 }
 
 .App-main {
@@ -92,6 +103,9 @@ video {
 
 footer {
   max-height: 5vh;
+  background-color: #282c34;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 @media screen and (max-width: 1000px) {
