@@ -35,6 +35,13 @@ input {
   border-radius: 5px;
   width: 20%;
   color: #2c3e50;
+  box-shadow: #ffffff1c 5px 6px 16px 0px;
+}
+
+.button-find:hover {
+  color: white;
+  background-color: #2e5174;
+  box-shadow: #ffffff1c 5px 6px 16px 0px;
 }
 
 .App-main {
