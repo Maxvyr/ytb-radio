@@ -5,7 +5,7 @@
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A72UVP8)
 
-A simple youtube downloader, work only on desktop, need some update for mobile version. You just need to paste the youtube video link and this web app do the work ;), Have fun :)
+A simple [youtube downloader](https://ytb-simple-dwld.vercel.app/), work for desktop, and android, need some update for dowload video on iOS. You just need to paste the youtube video link and this web app do the work ;), Have fun :)
 
 ### design inspiration
 
