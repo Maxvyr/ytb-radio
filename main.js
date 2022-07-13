@@ -38,7 +38,6 @@ const updateLink = (response) => {
 const onClickUpdate = () => {
   const linkBaseDesktop = "https://www.youtube.com/watch?v=";
   const linkBaseMobile = "https://youtu.be/";
-  //https://youtu.be/e-RbEcqQjQA
   if (inputText.value.includes(linkBaseDesktop)) {
     let videoId = inputText.value.replace(linkBaseDesktop, "");
     console.log(videoId);
