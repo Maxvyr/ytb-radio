@@ -36,9 +36,15 @@ const updateLink = (response) => {
 };
 
 const onClickUpdate = () => {
-  const linkBase = "https://www.youtube.com/watch?v=";
-  if (inputText.value.includes(linkBase)) {
-    let videoId = inputText.value.replace(linkBase, "");
+  const linkBaseDesktop = "https://www.youtube.com/watch?v=";
+  const linkBaseMobile = "https://youtu.be/";
+  //https://youtu.be/e-RbEcqQjQA
+  if (inputText.value.includes(linkBaseDesktop)) {
+    let videoId = inputText.value.replace(linkBaseDesktop, "");
+    console.log(videoId);
+    fetchVideo(videoId);
+  } else if (inputText.value.includes(linkBaseMobile)) {
+    let videoId = inputText.value.replace(linkBaseMobile, "");
     console.log(videoId);
     fetchVideo(videoId);
   } else {
