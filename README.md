@@ -9,7 +9,7 @@ A simple [youtube downloader](https://ytb-simple-dwld.vercel.app/), work for des
 
 ### design inspiration
 
-![1](https://cdn.dribbble.com/users/1696728/screenshots/18410481/media/9ae4d3dc1dc994b3461f1da986a933ba.jpg?compress=1&resize=1000x750&vertical=top)
+![dribble](https://cdn.dribbble.com/users/1696728/screenshots/18410481/media/9ae4d3dc1dc994b3461f1da986a933ba.jpg?compress=1&resize=1000x750&vertical=top)
 
 
 ## API
@@ -21,18 +21,14 @@ A simple [youtube downloader](https://ytb-simple-dwld.vercel.app/), work for des
 :man: **Maxime Vidalinc**
 
 - [GitHub](https://github.com/maxvyr)
-- [Twitter](https://twitter.com/m4xvyr)
-- [LinkedIn](https://www.linkedin.com/in/maxime-vidalinc/)
+- [Twitter](https://twitter.com/maxvyr_)
 
 ## 🤝 Contributing
 - Contributions, issues, and feature requests are welcome!
-- Feel free to check the [issues page](https://github.com/Maxvyr/maxvyr-site/issues).
+- Feel free to check the [issues page](https://github.com/pandamy-dev/ytb-simple-dwld/issues).
 
 # Show your support
 Give a ⭐ if you like this project!
 
 ## Crypto Tips
 ![https://raw.githubusercontent.com/Maxvyr/Maxvyr/main/img/tips/github-tips-crypto.png](https://raw.githubusercontent.com/Maxvyr/Maxvyr/main/img/tips/github-tips-crypto.png)
-
-
-# Acknowledgments
